@@ -1,0 +1,85 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
+
+# Cache directories
+.cache/
+cache/
+__pycache__/
+
+# Training outputs and checkpoints (keep local but don't copy to image)
+outputs/
+checkpoints/
+logs/
+runs/
+
+# Large model files and datasets (should be mounted as volumes)
+datasets/
+models/pretrained/
+*.safetensors
+*.bin
+*.pth
+*.pt
+
+# Documentation
+*.md
+docs/
+
+# Docker files (don't copy into the image)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/

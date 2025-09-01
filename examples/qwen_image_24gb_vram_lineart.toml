@@ -1,6 +1,6 @@
 # Change these paths
-output_dir = '/home/jaxn/diffusion-pipe/outputs'
-dataset = '/home/jaxn/diffusion-pipe/examples/dataset_lineart.toml'
+output_dir = '/workspace/outputs'
+dataset = '/workspace/examples/dataset_lineart.toml'
 
 # training settings
 epochs = 1000
@@ -31,8 +31,9 @@ blocks_to_swap = 8
 
 [model]
 type = 'qwen_image'
-# Change this path
-diffusers_path = '/home/jaxn/comfy/ComfyUI/models/diffusion_models/qwen_image_fp8_e4m3fn.safetensors'
+transformer_path = '/workspace/comfy/models/diffusion_models/qwen_image_distill_full_bf16.safetensors'
+text_encoder_path = '/workspace/comfy/models/text_encoders/qwen_2.5_vl_7b.safetensors'
+vae_path = '/workspace/comfy/models/vae/diffusion_pytorch_model.safetensors'
 dtype = 'bfloat16'
 transformer_dtype = 'float8'
 timestep_sample_method = 'logit_normal'
